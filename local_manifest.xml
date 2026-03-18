@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  
+<remote name="mt6833-dev-transsion" fetch="https://github.com/" />
+
+ <!-- Device -->
+ <project path="device/tecno/LH8n" name="android_device_tecno_LH8n" remote="mt6833-dev-transsion" revision="lineage-23.0" />
+
+ <!-- Kernel -->
+ <project path="device/tecno/LH8n-kernel" name="android_device_tecno_LH8n-kernel" remote="mt6833-dev-transsion" revision="main" />
+
+ <!--Vendor -->
+ <project path="vendor/tecno/LH8n" name="vendor_tecno_LH8n" remote="mt6833-dev-transsion" revision="lineage-23.0" />
+
+ <!-- Dolby -->
+ <project path="vendor/sony/dolby" name="android_vendor_sony_dolby" remote="mt6833-dev-transsion" revision="sixteen-expressive" />
+  
+ <!-- Device Support stuffs -->
+  <project path="vendor/mediatek/ims" name="techyminati/android_vendor_mediatek_ims" remote="mt6833-dev-transsion" revision="android-16-qpr2" />
+  <project path="device/mediatek/sepolicy_vndr" name="crdroidandroid/android_device_mediatek_sepolicy_vndr" remote="mt6833-dev-transsion" revision="16.0" />
+  <project path="hardware/mediatek" name="crdroidandroid/android_hardware_mediatek" remote="mt6833-dev-transsion" revision="16.0-old" />
+</manifest>
