@@ -13,7 +13,7 @@
  <project path="vendor/tecno/LH8n" name="mt6833-dev-transsion/vendor_tecno_LH8n" remote="gitbub" revision="lineage-23.0" />
 
  <!-- Dolby -->
- <project path="vendor/sony/dolby" name="MillenniumOSS/android_vendor_sony_dolby" remote="gitbub" revision="sixteen-expressive" />
+ <project path="vendor/sony/dolby" name="naden01/android_vendor_sony_dolby" remote="gitbub" revision="sixteen-expressive-v2" />
   
  <!-- Device Support stuffs -->
   <project path="vendor/mediatek/ims" name="techyminati/android_vendor_mediatek_ims" remote="gitbub" revision="android-16-qpr2" />
