@@ -1,22 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  
-<remote name="gitbub" fetch="https://github.com/" />
+  <remote name="gh" fetch="https://github.com" />
+  <remote name="gl" fetch="https://gitlab.com" />
 
- <!-- Device -->
- <project path="device/tecno/LH8n" name="mt6833-dev-transsion/android_device_tecno_LH8n" remote="gitbub" revision="lineage-23.0" />
+  <!-- Device Tree -->
+  <project name="mt6833-dev-transsion/android_device_tecno_LH8n" path="device/tecno/LH8n" remote="gh" revision="los232-test" />
 
- <!-- Kernel -->
- <project path="device/tecno/LH8n-kernel" name="mt6833-dev-transsion/android_device_tecno_LH8n-kernel" remote="gitbub" revision="main" />
+  <!-- Vendor Tree -->
+  <project name="mt6833-dev-transsion/vendor_tecno_LH8n" path="vendor/tecno/LH8n" remote="gh" revision="lineage-23.2" />
 
- <!--Vendor -->
- <project path="vendor/tecno/LH8n" name="mt6833-dev-transsion/vendor_tecno_LH8n" remote="gitbub" revision="lineage-23.0" />
+  <!-- Kernel Tree -->
+  <project name="mt6833-dev-transsion/android_kernel_tecno_LH8n" path="device/tecno/LH8n-kernel" remote="gh" revision="main" />
 
- <!-- Dolby -->
- <project path="vendor/sony/dolby" name="naden01/android_vendor_sony_dolby" remote="gitbub" revision="sixteen-expressive-v2" />
-  
- <!-- Device Support stuffs -->
-  <project path="vendor/mediatek/ims" name="techyminati/android_vendor_mediatek_ims" remote="gitbub" revision="android-16-qpr2" />
-  <project path="device/mediatek/sepolicy_vndr" name="crdroidandroid/android_device_mediatek_sepolicy_vndr" remote="gitbub" revision="16.0" />
-  <project path="hardware/mediatek" name="crdroidandroid/android_hardware_mediatek" remote="gitbub" revision="16.0" />
+  <!-- Sepolicy -->
+  <project name="crdroidandroid/android_device_mediatek_sepolicy_vndr" path="device/mediatek/sepolicy_vndr" remote="gh" revision="16.0" />
+
+  <!-- Hardware MediaTek -->
+  <project name="crdroidandroid/android_hardware_mediatek" path="hardware/mediatek" remote="gh" revision="16.0" />
+
+  <!-- Hardware Millennium -->
+  <project name="Swaggyxren/android_hardware_millennium" path="hardware/millennium" remote="gh" revision="seventeen" />
+
+  <!-- MediaTek IMS -->
+  <project name="MillenniumOSS/android_vendor_mediatek_ims" path="vendor/mediatek/ims" remote="gh" revision="sixteen-oem" />
+
+  <!-- Sony Dolby -->
+  <project name="naden01/android_vendor_sony_dolby" path="vendor/sony/dolby" remote="gh" revision="sixteen-redesign" />
+
+  <!-- Signing Keys -->
+  <project name="naden01/keys-los23" path="vendor/lineage-priv/keys" remote="gl" revision="main" />
 </manifest>
